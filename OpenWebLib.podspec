@@ -17,17 +17,20 @@ Pod::Spec.new do |s|
 
   s.name         = "OpenWebLib"
   s.version      = "0.0.1"
-  s.summary      = "A short description of OpenWebLib."
+  s.summary      = 'OpenWebLib is a powerful library for interacting with Web3 technologies.'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+s.description  = <<-DESC
+                OpenWebLib is a comprehensive library that enables seamless interaction with Web3 technologies,
+                offering features like smart contract integration, blockchain data querying, and more.
+                DESC
 
-  s.homepage     = "http://openweb3.io"
+
+  s.homepage     = "https://docs.openweb3.io/docs/getting-started"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +41,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+s.license      = { :type => 'MIT', :file => 'LICENSE' }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
