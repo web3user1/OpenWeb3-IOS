@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/OpenWebLib.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/web3user1/OpenWeb3-IOS.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
