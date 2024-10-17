@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenWebLib"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = 'OpenWebLib is a powerful library for interacting with Web3 technologies.'
 
   # This description is used to generate tags and improve search results.
