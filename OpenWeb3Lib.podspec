@@ -10,13 +10,17 @@ Pod::Spec.new do |s|
   s.author       = { 'OpenWeb3' => 'mtsocialdao@gmail.com' }
   s.source       = { :git => 'https://github.com/web3user1/OpenWeb3-IOS.git', :tag => s.version }
 
+  s.xcconfig = {
+    'GENERATE_INFOPLIST_FILE' => 'YES'
+  }
+
   s.subspec 'Swift5.9' do |ss|
-    ss.vendored_frameworks = 'Frameworks/OpenWebLib-Swift5.9.xcframework'
+    ss.vendored_frameworks = 'Frameworks/OpenWeb3Lib-Swift5.9.xcframework'
     s.swift_version = '5.9'
   end
 
   s.subspec 'Swift6.0' do |ss|
-    ss.vendored_frameworks = 'Frameworks/OpenWebLib-Swift6.0.xcframework'
+    ss.vendored_frameworks = 'Frameworks/OpenWeb3Lib-Swift6.0.xcframework'
     s.swift_version = '6.0'
   end
 end
