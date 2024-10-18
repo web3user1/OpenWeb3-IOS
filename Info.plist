@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We need this so that you can record and share voice messages and videos with sound.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>We need this so that you can take and share photos and videos.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>When you send your location to your friends, Sample2 needs access to show them a map. You also need this to send locations from an Apple Watch.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>When you send your location to your friends, Sample2 needs access to show them a map.</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
