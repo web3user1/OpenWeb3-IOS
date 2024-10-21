@@ -11,22 +11,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/web3user1/OpenWeb3-IOS.git', :tag => s.version }
   s.requires_arc = true
 
-  s.subspec 'Swift5.9' do |ss|
-     ss.vendored_frameworks = 'Frameworks/Swift5.9/OpenWeb3Lib.xcframework'
+  s.vendored_frameworks = 'Frameworks/OpenWeb3Lib.xcframework'
      s.swift_version = '5.9'
-  end
-
-  s.subspec 'Swift6.0' do |ss|
-     ss.vendored_frameworks = 'Frameworks/Swift6.0/OpenWeb3Lib.xcframework'
-     s.swift_version = '6.0'
-  end
 
   s.xcconfig = {
     'GENERATE_INFOPLIST_FILE' => 'YES',
-  }
-
-  s.pod_target_xcconfig = {
-   'VALID_ARCHS' => 'x86_64 arm64'
   }
 
 end
