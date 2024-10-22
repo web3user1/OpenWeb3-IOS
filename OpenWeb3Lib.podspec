@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'OpenWeb3Lib'
-  s.version      = '1.0.2'
+  s.version      = '1.0.2-swift.6.0'
   s.summary      = 'OpenWebLib is a powerful library for interacting with Web3 technologies.'
   s.description  = 'OpenWebLib is a comprehensive library that enables seamless interaction with Web3 technologies,
                                     offering features like smart contract integration, blockchain data querying, and more.'
@@ -11,11 +11,15 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/web3user1/OpenWeb3-IOS.git', :tag => s.version }
   s.requires_arc = true
 
-  s.vendored_frameworks = 'Frameworks/OpenWeb3Lib.xcframework'
-     s.swift_version = '5.9'
+  s.vendored_frameworks = 'Frameworks/Swift6.0/OpenWeb3Lib.xcframework'
+  s.swift_version = '6.0'
 
   s.xcconfig = {
     'GENERATE_INFOPLIST_FILE' => 'YES',
+  }
+
+  s.pod_target_xcconfig = {
+    'VALID_ARCHS' => 'x86_64 arm64'
   }
 
 end
