@@ -4,8 +4,164 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0851c3d-508d-4f31-9889-27f05e415adf" name="Changes" comment="1.0.0-swift5.9">
+    <list default="true" id="c0851c3d-508d-4f31-9889-27f05e415adf" name="Changes" comment="1.0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Headers/OpenWeb3Lib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ab.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/anp.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ar.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ca.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/cs.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/da.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/de.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/el.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/en.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/es.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/fi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/fr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/he.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/hi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/hr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/hu.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/icon_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/icon_float_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/icon_minimization.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/icon_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/icon_star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/id.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/it.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ja.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ko.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ms.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/nb.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/nl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/pl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/pt-BR.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/pt.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ro.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/ru.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/sk.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/sl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/sv.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/th.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/tr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/uk.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/vi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/zh-HK.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/zh-Hans.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/zh-Hant-TW.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/zh-Hant.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/zh.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Headers/OpenWeb3Lib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/module.modulemap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ab.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/anp.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ar.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ca.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/cs.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/da.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/de.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/el.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/en.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/es.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/fi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/fr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/he.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/hi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/hr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/hu.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/icon_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/icon_float_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/icon_minimization.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/icon_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/icon_star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/id.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/it.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ja.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ko.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ms.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/nb.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/nl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/pl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/pt-BR.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/pt.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ro.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/ru.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/sk.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/sl.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/sv.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/th.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/tr.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/uk.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/vi.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/zh-HK.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/zh-Hans.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/zh-Hant-TW.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/zh-Hant.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/zh.lproj/Localizable.strings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/module.modulemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift5.9/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/Swift6.0/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OpenWeb3Lib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWeb3Lib.podspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729582515660</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1.0.0">
+      <option name="closed" value="true" />
+      <created>1729585266247</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1729585266247</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -219,6 +383,7 @@
     <MESSAGE value="V1.0.2" />
     <MESSAGE value="1.0.0-swift6.0" />
     <MESSAGE value="1.0.0-swift5.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.0-swift5.9" />
+    <MESSAGE value="1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.0" />
   </component>
 </project>

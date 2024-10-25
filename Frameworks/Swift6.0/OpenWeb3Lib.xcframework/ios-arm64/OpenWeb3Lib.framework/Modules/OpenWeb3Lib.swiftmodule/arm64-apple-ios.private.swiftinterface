@@ -6262,6 +6262,7 @@ public struct ShareDto {
   @objc open func getName() -> Swift.String
   open func signIn(verifier: Swift.String, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
   @objc open func signOut()
+  @objc open func isVerified() -> Swift.Bool
   open func getBotService() -> (any OpenWeb3Lib.BotService)?
   open func getMiniAppService() -> OpenWeb3Lib.MiniAppService?
   @objc deinit

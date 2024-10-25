@@ -4,6 +4,7 @@ framework module OpenWeb3Lib {
 
   module * { export * }
 }
+
 module OpenWeb3LibPrivite {
     export *
 }
