@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo</title>
+  <script src="miniapp-web-app.js"></script>
+  <script>
+    window.OpenWeb3.WebApp.headerColor = "#B0E0E6"
+    window.OpenWeb3.WebApp.setBackgroundColor("#B0E0E6")
+
+    function closeMiniApp(){
+      window.OpenWeb3.WebApp.close()
+    }
+
+    function expandMiniApp(){
+      window.OpenWeb3.WebApp.expand()
+    }
+
+    function disableExpand() {
+      window.OpenWeb3.WebApp.isVerticalSwipesEnabled = !window.OpenWeb3.WebApp.isVerticalSwipesEnabled
+      document.getElementById("expand").textContent = window.OpenWeb3.WebApp.isVerticalSwipesEnabled ? "Disable Vertical Swipes" : "Enable Vertical Swipes"
+    }
+
+    function notify(text) {
+      let infoElement = document.querySelector(".info");
+
+      let timestamp = new Date().toLocaleTimeString();
+      let message = timestamp + ": " + text;
+
+      let logListElement = document.querySelector("#logList");
+      let listItem = document.createElement("li");
+      listItem.textContent = message;
+
+      logListElement.insertBefore(listItem, logListElement.firstChild);
+
+      console.log(message)
+    }
+
+    function sayHello(){
+      window.OpenWeb3.WebApp.sayHello()
+      notify("OpenWeb3 MiniApp=> Hello, OpenWeb3 App!");
+    }
+
+    function openWallet() {
+      window.OpenWeb3.WebApp.openWebAppLink("https://openweb3.io/MatrixBot102/mt_wallet")
+    }
+
+    function selectContact() {
+      window.OpenWeb3.WebApp.openWebAppLink("https://openweb3.io/wallet?startattach=send-assetCurrency__&choose=users")
+    }
+
+    function getWalletAddress() {
+      window.OpenWeb3.WebApp.invokeCustomMethod( "get_wallet_address", "1", (err,eventData)=> {
+        let walletAddressElement = document.querySelector(".walletAddress");
+        walletAddressElement.textContent = eventData;
+      })
+    }
+
+    function dismissConfirm() {
+      window.OpenWeb3.WebApp.enableClosingConfirmation()
+    }
+
+    function showAlert() {
+      window.OpenWeb3.WebApp.showAlert("Hello, OpenWeb3!")
+    }
+
+    function showPopup() {
+        window.OpenWeb3.WebApp.showPopup({
+        title: 'Popup title',
+        message: 'Popup message',
+        buttons: [
+          {id: 'delete', type: 'destructive', text: 'Delete all'},
+          {id: 'faq', type: 'default', text: 'Open FAQ'},
+          {type: 'cancel'},
+        ]
+      }, function(button_id) {
+        if (button_id == 'delete') {
+          window.OpenWeb3.WebApp.showAlert("'Delete all' selected");
+        } else if (button_id == 'faq') {
+          window.OpenWeb3.WebApp.openLink('https://docs.openweb3.io/reference/initialization-1');
+        }
+      });
+    }
+
+    function requestWriteAccess() {
+      window.OpenWeb3.WebApp.requestWriteAccess( (arrowed) => {
+        if( arrowed) {
+          notify("Send message to bot arrowed!")
+        } else {
+          notify("Send message to bot not arrowed!")
+        }
+      } )
+    }
+
+    function vibrationEffect() {
+      window.OpenWeb3.WebApp.HapticFeedback.impactOccurred("heavy")
+    }
+
+    function qrcodeScan() {
+      window.OpenWeb3.WebApp.showScanQrPopup( {text: 'Request scan qrcode by wallet.'}, result => {
+        notify(result);
+        return true
+      })
+    }
+
+    function hideHeadContainer() {
+      window.OpenWeb3.WebApp.isActionBarVisible = !window.OpenWeb3.WebApp.isActionBarVisible
+      document.getElementById("head").textContent = window.OpenWeb3.WebApp.isActionBarVisible ? "Hide Action Bar" : "Show Action Bar"
+    }
+
+    function setFullScreen() {
+      window.OpenWeb3.WebApp.isFullScreenEnabled = !window.OpenWeb3.WebApp.isFullScreenEnabled
+      document.getElementById("fullscreen").textContent = window.OpenWeb3.WebApp.isFullScreenEnabled ? "Exit FullScreen" : "Set FullScreen"
+    }
+
+    function showBackButton() {
+      window.OpenWeb3.WebApp.BackButton.show()
+      window.OpenWeb3.WebApp.BackButton.onClick(()=> {
+        window.OpenWeb3.WebApp.BackButton.hide()
+      })
+    }
+
+    function showMainButton() {
+      window.OpenWeb3.WebApp.MainButton.show()
+      window.OpenWeb3.WebApp.MainButton.onClick(()=> {
+        window.OpenWeb3.WebApp.MainButton.hide()
+      })
+    }
+
+    var biometryToken = ""
+
+    function initBiometryAccess() {
+     window.OpenWeb3.WebApp.BiometricManager.init(() => {
+        notify( "Biometric init finish, isBiometricAvailable: " + window.OpenWeb3.WebApp.BiometricManager.isBiometricAvailable);
+      })
+    }
+
+   function requestBiometryAccess() {
+      if (!checkBiometryAvailable()) {
+        return
+      }
+      window.OpenWeb3.WebApp.BiometricManager.requestAccess({reason: "Test"}, (isAuthenticated) => {
+        notify( "BiometricManager isAuthenticated: " + isAuthenticated);
+      })
+    }
+
+    function requestBiometryAuth() {
+        if (!checkBiometryAvailable()) {
+          return
+        }
+        window.OpenWeb3.WebApp.BiometricManager.authenticate({reason: "Test"}, (isAuthenticated, token) => {
+            biometryToken = token
+            notify( "BiometricManager isAuthenticated: " + isAuthenticated + ", token: " + token);
+         })
+    }
+
+    function updateBiometryToken() {
+      if (!checkBiometryAvailable()) {
+        return
+      }
+      window.OpenWeb3.WebApp.BiometricManager.updateBiometricToken(biometryToken, (isUpdated) => {
+        notify( "BiometricManager Token isUpdated: " + isUpdated);
+      })
+    }
+
+    function openBiometrySettings() {
+      if (!checkBiometryAvailable()) {
+        return
+      }
+      window.OpenWeb3.WebApp.BiometricManager.openSettings()
+    }
+
+    function checkBiometryAvailable() {
+      if (window.OpenWeb3.WebApp.BiometricManager.isBiometricAvailable) {
+        return true
+      }
+       notify( "BiometricManager should be inited before using.");
+      return false
+    }
+
+    function requestLocation() {
+       if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          notify('(' + position.coords.latitude + ', ' + position.coords.longitude + ')');
+        });
+      } else {
+        notify('Geolocation is not supported in this browser.');
+      }
+    }
+
+    function requestVideo() {
+        if (navigator.mediaDevices) {
+          navigator.mediaDevices.getUserMedia({ audio: false, video: true }).then(function(stream) {
+              notify('Video access granted');
+          });
+        } else {
+            notify('Media devices is not supported in this browser.');
+        }
+    }
+
+    function requestAudio() {
+        if (navigator.mediaDevices) {
+            navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(function(stream) {
+                notify('Audio access granted');
+            });
+        } else {
+            notify('Media devices is not supported in this browser.');
+        }
+    }
+
+    function requestAudioVideo() {
+        if (navigator.mediaDevices) {
+            navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(function(stream) {
+                notify('Audio and video access granted');
+            });
+        } else {
+            notify('Media devices is not supported in this browser.');
+        }
+    }
+
+    function requestFileChoose() {
+      var fileInput = document.getElementById('fileInput');
+      fileInput.click();
+    }
+
+    function openImage(event) {
+       var file = event.target.files[0];
+       var reader = new FileReader();
+
+       reader.onload = function(e) {
+          var selectedImage = document.getElementById('selectedImage');
+          selectedImage.src = e.target.result;
+             selectedImage.style.display = 'block';
+          };
+
+       reader.readAsDataURL(file);
+   }
+
+    window.OpenWeb3.WebApp.onEvent("notify", (eventType, eventData)=> {
+      notify( "OpenWeb3 App=>" + eventData.msg);
+    })
+
+    document.addEventListener('DOMContentLoaded', function() {
+        notify("WebApp init success. Version: " + window.OpenWeb3.WebApp.version);
+    });
+
+  </script>
+  <style>
+    body {background-color: powderblue; margin: 0px}
+    button {font-size: 20px; min-height: 50px; padding: 10px 10px; margin-top: 10px; border-radius: 8px}
+    .app {padding: 10px 10px 150px 10px; display: flex; flex-direction: column; align-items: start; align-content: start}
+    .t {font-size: 30px; font-weight: bold;}
+    .info {height: 100px; position: fixed; bottom: 0; overflow: auto; padding: 10px; background-color: #000000; color: #FFFFFF; font-size: 15px; width: 100%; justify-content: left}
+    .walletAddress { padding: 0; font-size: 30px; color: #180d68; font-weight: bold }
+  </style>
+</head>
+<body>
+<div class="app">
+  <button onclick="sayHello()">Say Hello</button>
+
+  <p class="t">Behaviors</p>
+  <button onclick="closeMiniApp()">Close MiniApp</button>
+  <button id="head" onclick="hideHeadContainer()">Hide Action Bar</button>
+  <button id="fullscreen" onclick="setFullScreen()">Set FullScreen</button>
+  <button onclick="expandMiniApp()">Expand MiniApp</button>
+  <button id="expand" onclick="disableExpand()">Disable Vertical Swipes</button>
+  <button onclick="dismissConfirm()">Enable Dismiss Confirm</button>
+
+  <p class="t">Actions</p>
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="showPopup()">Show Popup</button>
+  <button onclick="requestWriteAccess()">Send Message Access</button>
+  <button onclick="vibrationEffect()">Vibration Effect</button>
+  <button onclick="qrcodeScan()">Qrcode Scan</button>
+  <button onclick="openWallet()">Launch New MiniApp</button>
+  <button onclick="selectContact()">Select Contact</button>
+
+  <p class="t">Open Link</p>
+  <a href="https://t.me/apps/10">https://t.me/apps/10</a>
+  <a href="https://www.google.com">https://www.google.com</a>
+  <a href="https://apps.apple.com/us/app/zapry-web3-social-platform/id6443603245?l=zh-Hans-CN" target="_blank">https://apps.apple.com/us/app/zapry-web3-social-platform/id6443603245?l=zh-Hans-CN</a>
+
+  <p class="t">Buttons</p>
+  <button onclick="showBackButton()">Show Back Button</button>
+  <button onclick="showMainButton()">Show Main Button</button>
+
+  <p class="t">BiometricManager</p>
+  <button onclick="initBiometryAccess()">Init BiometricManager</button>
+  <button onclick="requestBiometryAccess()">Request Biometry Access</button>
+  <button onclick="requestBiometryAuth()">Request Biometry Auth</button>
+  <button onclick="updateBiometryToken()">Update Biometry Token</button>
+  <button onclick="openBiometrySettings()">Open Biometry Settings</button>
+
+  <p class="t">Permission</p>
+  <button onclick="requestLocation()">Request Location</button>
+  <button onclick="requestVideo()">Request Video</button>
+  <button onclick="requestAudio()">Request Audio</button>
+  <button onclick="requestAudioVideo()">Request Video And Audio</button>
+  <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="openImage(event)">
+  <button onclick="requestFileChoose()">Request File Choose</button>
+  <img id="selectedImage" src="" style="display: none; max-width: 100%; max-height: 100%;">
+</div>
+<ul class="info" id="logList"></ul>
+</body>
+</html>

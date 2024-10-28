@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+workspace 'Sample2.xcworkspace'
+
+target 'Sample2' do
+  inherit! :search_paths
+  project 'Sample2.xcodeproj'
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Sample2
+  xcode_version = %x(xcodebuild -version).strip
+  if xcode_version.include?("Xcode 15")
+    pod 'OpenWeb3Lib', '1.0.1-swift5.9'
+  else
+    pod 'OpenWeb3Lib', '1.0.1-swift6.0'
+  end
+
+end

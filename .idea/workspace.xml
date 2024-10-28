@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0851c3d-508d-4f31-9889-27f05e415adf" name="Changes" comment="1.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OpenWeb3Lib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWeb3Lib.podspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729857674319</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="1.0.1">
+      <option name="closed" value="true" />
+      <created>1729857942268</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1729857942268</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

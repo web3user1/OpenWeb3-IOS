@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo</title>
+  <script src="miniapp-web-app.js"></script>
+  <script>
+
+    function closeMiniApp(){
+      window.OpenWeb3.WebApp.close()
+    }
+
+    function expandMiniApp(){
+      window.OpenWeb3.WebApp.expand()
+    }
+
+    function sayHello(){
+      window.OpenWeb3.WebApp.sayHello()
+      let infoElement = document.querySelector(".info");
+      infoElement.innerHTML = infoElement.innerHTML + "<br/>" + "OpenWeb3 MiniApp=> Hello, OpenWeb3 App!";
+    }
+
+    function openWallet() {
+      window.OpenWeb3.WebApp.openOpenWeb3Link("https://openweb3.io/wallet")
+    }
+
+    function getWalletAddress() {
+      window.OpenWeb3.WebApp.invokeCustomMethod( "get_wallet_address", "1", (err,eventData)=> {
+        let walletAddressElement = document.querySelector(".walletAddress");
+        walletAddressElement.textContent = eventData;
+      })
+    }
+
+    function disableExpand() {
+      window.OpenWeb3.WebApp.invokeCustomMethod( "get_wallet_address", "1", (err,eventData)=> {
+        let walletAddressElement = document.querySelector(".walletAddress");
+        walletAddressElement.textContent = eventData;
+      })
+    }
+
+    window.OpenWeb3.WebApp.onEvent("notify", (eventType, eventData)=> {
+      let infoElement = document.querySelector(".info");
+      infoElement.innerHTML = infoElement.innerHTML + "<br/>" +  "OpenWeb3 App=>" + eventData.msg;
+    })
+
+    function sendMessage() {
+      const messageInput = document.getElementById("messageInput");
+      window.OpenWeb3.WebApp.sendData(messageInput.value)
+      messageInput.value = ""
+    }
+
+  </script>
+  <style>
+    button {font-size: 20px; min-height: 50px; padding: 10px 10px; margin-top: 10px; border-radius: 8px}
+    div {display: flex; flex-direction: column; align-items: center; align-content: center }
+    .info {font-size: 20px; width: 100%; justify-content: left}
+    .walletAddress { padding: 0; font-size: 30px; color: #180d68; font-weight: bold }
+  </style>
+</head>
+<body>
+<div id="app">
+  <button onclick="closeMiniApp()">Close MiniApp</button>
+  <button onclick="getWalletAddress()">getWalletAddress</button>
+  <p class="walletAddress">NoN</p>
+  <div style=" width: 90%; display: flex; flex-direction: row; align-items: center">
+    <label for="messageInput" style="flex: 1; margin-top: 10px;"><textarea style=" width: 100%; height: 50px" id="messageInput" placeholder="Input message"></textarea></label>
+    <button style="margin-left: 10px" onclick="sendMessage()">Send</button>
+  </div>
+  <p class="info"></p>
+</div>
+</body>
+</html>
