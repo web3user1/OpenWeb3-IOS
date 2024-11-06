@@ -5684,15 +5684,21 @@ public protocol AttachmentContainable : OpenWeb3Lib.ViewController {
   var cancelPanGesture: () -> Swift.Void { get set }
   var isContainerPanning: () -> Swift.Bool { get set }
   var isContainerExpanded: () -> Swift.Bool { get set }
-  var isPanGestureEnabled: (() -> Swift.Bool)? { get }
+  var isPanGestureEnabled: (() -> Swift.Bool)? { get set }
   var mediaPickerContext: (any OpenWeb3Lib.AttachmentMediaPickerContext)? { get }
+  var updateContainerHeadColor: (UIKit.UIColor, UIKit.UIColor, UIKit.UIColor, OpenWeb3Lib.ContainedViewLayoutTransition) -> Swift.Void { get set }
+  var updateContainerHeadAlpha: (Swift.Double, OpenWeb3Lib.ContainedViewLayoutTransition) -> Swift.Void { get set }
   func isContainerPanningUpdated(_ panning: Swift.Bool)
   func resetForReuse()
   func prepareForReuse()
   func requestDismiss(completion: @escaping () -> Swift.Void)
   func shouldDismissImmediately() -> Swift.Bool
+  func isAutoExpand() -> Swift.Bool
+  func autoExpand() -> Swift.Bool
   func canExpand() -> Swift.Bool
   func isFullScreenMod() -> Swift.Bool
+  func isBackButtonVisible() -> Swift.Bool
+  func requestBackClick()
 }
 extension OpenWeb3Lib.AttachmentContainable {
   public func isContainerPanningUpdated(_ panning: Swift.Bool)
@@ -5700,10 +5706,13 @@ extension OpenWeb3Lib.AttachmentContainable {
   public func prepareForReuse()
   public func requestDismiss(completion: @escaping () -> Swift.Void)
   public func shouldDismissImmediately() -> Swift.Bool
+  public func isAutoExpand() -> Swift.Bool
   public func canExpand() -> Swift.Bool
   public var isPanGestureEnabled: (() -> Swift.Bool)? {
     get
   }
+  public func isBackButtonVisible() -> Swift.Bool
+  public func requestBackClick()
 }
 public enum AttachmentMediaPickerSendMode {
   case generic
@@ -7744,6 +7753,9 @@ public enum NavigationPreviousAction : Swift.Equatable {
   public static func == (lhs: OpenWeb3Lib.NavigationPreviousAction, rhs: OpenWeb3Lib.NavigationPreviousAction) -> Swift.Bool
 }
 @objc final public class NavigationBackgroundNode : OpenWeb3LibPrivite.ASDisplayNode {
+  final public var bgColor: UIKit.UIColor {
+    get
+  }
   final public var effectView: UIKit.UIVisualEffectView?
   final public var backgroundView: UIKit.UIView {
     get

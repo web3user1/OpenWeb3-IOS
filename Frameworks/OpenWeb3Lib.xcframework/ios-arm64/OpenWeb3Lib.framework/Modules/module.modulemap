@@ -1,6 +1,0 @@
-framework module OpenWeb3Lib {
-  umbrella header "OpenWeb3Lib.h"
-  export *
-
-  module * { export * }
-}
