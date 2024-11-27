@@ -14,51 +14,51 @@
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nwPZUIDfayP/j6oef8UvbTCdR/8=
+		KGlWHvjAw6UKEVH06yqwnAIFSJE=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		DaR8VWyLFUeM0iasBVV8G9CEvuY=
+		WeSvpjbV0JUU/1ONtJP953QKnHk=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BhQJqyBKZe745Xs1+qUSUrana/w=
+		7Gdx2EgxziTP5tIXP0Ax2P5tEqA=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DMQ3osLygyypURtf38HgPrDVyz0=
+		IlNlpWFLJf5tZOu0J2vGwu8WChc=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pjNXvUbhCQNpLxYbxq4oOT5XvcQ=
+		IqcprGF4207iD6ixbOFI4y8EDXU=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DMQ3osLygyypURtf38HgPrDVyz0=
+		IlNlpWFLJf5tZOu0J2vGwu8WChc=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tqG7VX+9ZoTOwjxSzCijxdXiKrI=
+		nbjzxCmVxYiDxiG9/7tl/5YItSk=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BhQJqyBKZe745Xs1+qUSUrana/w=
+		7Gdx2EgxziTP5tIXP0Ax2P5tEqA=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FSXWK9X0fZe90sFGlQaIk5RbVkg=
+		DNtp0U7qyTiAifBr0YeC8jGKCjI=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pz024CjhZ7SEBvnmgXsMpmXRvZA=
+		K30KE7U+TQDvtdDwqvw/GWXGhc0=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FSXWK9X0fZe90sFGlQaIk5RbVkg=
+		DNtp0U7qyTiAifBr0YeC8jGKCjI=
 		</data>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0d/NoAKZiFAnvVWbytyQaVAveDQ=
+		lX7V8HAd9J5AdtIQDlwP3EFMqZ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1SCRZ4MfkPHC3LyHtnl2oIrOF+A=
+			o+HMHlhEM+cgbgcbYUSayOBplSA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -215,6 +215,34 @@
 		<key>icon_float_close.png</key>
 		<data>
 		D/JDdLMmLheT+5T0FdfLprtcPQ0=
+		</data>
+		<key>icon_menu_feedback.png</key>
+		<data>
+		E0tmwHPvHygbk7kDSqIjjcLUwA0=
+		</data>
+		<key>icon_menu_privacy.png</key>
+		<data>
+		Vto+xcDIg88GVqbMUUc2jTjypao=
+		</data>
+		<key>icon_menu_reload.png</key>
+		<data>
+		vZo4kO4BxIN3v8kTpJrd9Vh8g2E=
+		</data>
+		<key>icon_menu_settings.png</key>
+		<data>
+		DTx4b6i/obBRgggVL3N1BuvTsh8=
+		</data>
+		<key>icon_menu_share.png</key>
+		<data>
+		zKokZH8Fa8mmt7iUUrb5Y4EcT5I=
+		</data>
+		<key>icon_menu_shortcut.png</key>
+		<data>
+		Aj+p66aiyMTQXh+N21sItOIoj+4=
+		</data>
+		<key>icon_menu_user_agreement.png</key>
+		<data>
+		c/doCJBptLF4cM6qjb7LCLjgdgU=
 		</data>
 		<key>icon_minimization.png</key>
 		<data>
@@ -403,7 +431,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6R5iSiEiLGzyJQEJ3wCU5gQSLdI=
+			9dhxyNrrhiFrJqZz31wdd+mDzDc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -412,7 +440,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tfIWM7IKs8WSVoiMXHvIFKlnGks=
+			qEUPZYodUWh3H/czaU99Mym5YAw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -430,7 +458,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6R5iSiEiLGzyJQEJ3wCU5gQSLdI=
+			TL8zY0HhQNPXgos9CM6GVg78tBg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -439,7 +467,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tfIWM7IKs8WSVoiMXHvIFKlnGks=
+			2wZOiLTCXwrdcNIKmhXNG1sOYlk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -458,84 +486,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HFIQqerL5l+nYy2qAqdkXWVlftAQHobzylf6k6P0cHc=
+			DW06LRdjwGI7eP9453XV1n8J4UUsw2OXSOLuLdeyjvY=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQ+kAWEOPSDGfaYlj0I4/kRxct6I8xnwyqsfTKUtDb8=
+			nRAWevMWmwDiUu4OlOWbde6GH9o8D7qV2pEh1KGj1mY=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G09wDe31A4y9Rnm0TZWrxv7aF7MU7uDrvpnc/qEBkMw=
+			vlk2R4z9pNzWxYR4TFuYqh6a2HLAK10qCYotrgB56pI=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6D1hSsLVUBD2hnx12V88yj/IG0ekBEF2uGH54tKmI2w=
+			PmumUPw65dWTXKGVC+ufH7wX9BaFWtkbPEH+Yb94MKo=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mMCaeQI+gXr6hZdHuLTCNfdEStV4phNEBkTMvwFgz5M=
+			cSaQk8ISzk415DNLzhNyaSb9yeuBxfcn5hVU70iMBgk=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6D1hSsLVUBD2hnx12V88yj/IG0ekBEF2uGH54tKmI2w=
+			PmumUPw65dWTXKGVC+ufH7wX9BaFWtkbPEH+Yb94MKo=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5wCK9a2mGgBEFKqZ1RgHngHnS+85UgON7AEHg+oi4bI=
+			sjiFbkAtUOV/Z4QdZlyURpkn9L3CANscCLkT2ZzpdJk=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G09wDe31A4y9Rnm0TZWrxv7aF7MU7uDrvpnc/qEBkMw=
+			vlk2R4z9pNzWxYR4TFuYqh6a2HLAK10qCYotrgB56pI=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JANBeBY0lMjYYrzfBW0ncS+iB81OXzjkOLv+vPMBNns=
+			NiVCJVvvov6K/dIbtb5v5XFSg46m/wDnfSVXDkVArkM=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8LByVSS/Yk3D2K7XLeD9SQwgKrMPRmLstnK4ou2nR5E=
+			duQQwtFWcQFXXsWfdLhyMgCN1e5egnrstvLyx/ALRhw=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JANBeBY0lMjYYrzfBW0ncS+iB81OXzjkOLv+vPMBNns=
+			NiVCJVvvov6K/dIbtb5v5XFSg46m/wDnfSVXDkVArkM=
 			</data>
 		</dict>
 		<key>Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			90OMcqNrHY/3cCyI+HdEg4UakpIHVx2++rpBvhUSDPo=
+			TGWUnDqExThSKTc4OFtRVm/a7c4vPsi6H4pFCBEXMXQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -621,7 +649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aBqRejxPckcBEcC/4r8LnsHbSIGNHsMsCgW4PwYXkFE=
+			nvKx4bO0RUOeoyrKG1tmRFYFdYojkyjJLB2cLuJNZYg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -701,6 +729,55 @@
 			<key>hash2</key>
 			<data>
 			iL/O1jgIariPIAd2f5aiCTRSbz1VfauiS5KLzoXsauI=
+			</data>
+		</dict>
+		<key>icon_menu_feedback.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zPzm08vof98ZjqeEEaC/AXEmQJMApfc+81e6e2ApdgY=
+			</data>
+		</dict>
+		<key>icon_menu_privacy.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LwdvgrMEwEZmivbpFndvvX6NB1Uw01GMkkmaDdPho9Y=
+			</data>
+		</dict>
+		<key>icon_menu_reload.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dHGefNMuhtayLcs5oYIMb/yo5moJCfGezT2aljSw/cM=
+			</data>
+		</dict>
+		<key>icon_menu_settings.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UkaUYlCxcJrBMcn79WJMDOxw2lpPyJ1ErI4lyyoO4BU=
+			</data>
+		</dict>
+		<key>icon_menu_share.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2GgEfxiZs8G47jvV9aelzQYm50jJ2cIUuzgzPFwSYXo=
+			</data>
+		</dict>
+		<key>icon_menu_shortcut.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wf5URuFs3YLxp+dSP3jpL5jaqh6zQofjg2qRHCM8WKw=
+			</data>
+		</dict>
+		<key>icon_menu_user_agreement.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hcmOuOLiPSqSI3kqSq2q7LbGRx/zc0xzrhYvPL/ldOs=
 			</data>
 		</dict>
 		<key>icon_minimization.png</key>
@@ -899,7 +976,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZYm800U+IJYZHOca2e4M2YNOYrNbuYEG+9FYKFnaWI=
+			8XrYzmkWjfyOOTLMNYrDbR/iHgSWR6mHTcOXUD6jwUc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -908,7 +985,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MUADESXImgMdgPu2/avBayn3eTOA4fQXQerSZ4WQUA=
+			th5qDFgJvS6BnE1Wask+GaDk8XCnV3dP+V1JZ87mn34=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -926,7 +1003,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZYm800U+IJYZHOca2e4M2YNOYrNbuYEG+9FYKFnaWI=
+			lHeaRSq3SY/WgSMrEvhVmVPbRN/mEuO8ym7lvmARpsU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -935,7 +1012,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MUADESXImgMdgPu2/avBayn3eTOA4fQXQerSZ4WQUA=
+			bLmBJiVqOSYyHxq9HbnOT1binHAyPvaP0NQRQNrazxw=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -5694,9 +5694,13 @@ public protocol AttachmentContainable : OpenWeb3Lib.ViewController {
   func requestDismiss(completion: @escaping () -> Swift.Void)
   func shouldDismissImmediately() -> Swift.Bool
   func isAutoExpand() -> Swift.Bool
-  func autoExpand() -> Swift.Bool
+  func isModalStyle() -> Swift.Bool
   func canExpand() -> Swift.Bool
   func isFullScreenMod() -> Swift.Bool
+  func isCustomNavitationStyle() -> Swift.Bool
+  func onUpdateModalProgress(_ topInset: CoreFoundation.CGFloat)
+  func allowVerticalSwipe() -> Swift.Bool
+  func allowHorizontalSwipe() -> Swift.Bool
   func isBackButtonVisible() -> Swift.Bool
   func requestBackClick()
 }
@@ -5708,6 +5712,7 @@ extension OpenWeb3Lib.AttachmentContainable {
   public func shouldDismissImmediately() -> Swift.Bool
   public func isAutoExpand() -> Swift.Bool
   public func canExpand() -> Swift.Bool
+  public func onUpdateModalProgress(_ topIns: CoreFoundation.CGFloat)
   public var isPanGestureEnabled: (() -> Swift.Bool)? {
     get
   }
@@ -6046,10 +6051,6 @@ public struct PeerParams : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct LaunchMiniAppDto : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct DAppDto : Swift.Codable {
   public let id: Swift.String?
   public let title: Swift.String?
@@ -6059,6 +6060,10 @@ public struct DAppDto : Swift.Codable {
   public let bannerUrl: Swift.String?
   public let createAt: Swift.Int?
   public let updateAt: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AppSettings : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -6073,6 +6078,7 @@ public struct MiniAppDto : Swift.Codable {
   public let botName: Swift.String?
   public let createAt: Swift.Int?
   public let updateAt: Swift.Int?
+  public let options: OpenWeb3Lib.AppSettings?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -6136,7 +6142,8 @@ public func last<T, E>(signal: OpenWeb3Lib.Signal<T, E>) -> OpenWeb3Lib.Signal<T
     public func useWeChatStyle(_ useWeChatStyle: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func isLocalSource(_ isLocalSource: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func isSystem(_ isSystem: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
-    public func isGame(_ isGame: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
+    public func useModalStyle(_ useModalStyle: Swift.Bool?) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
+    public func useCustomNavigation(_ useCustomNavigation: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func isLaunchUrl(_ isLaunchUrl: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func useCache(_ useCache: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func autoExpand(_ autoExpand: Swift.Bool) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
@@ -6200,10 +6207,11 @@ public protocol IMiniApp : AnyObject {
   func isSystem() -> Swift.Bool
   func minimization()
   func maximize()
+  func clickMenu(type: Swift.String)
 }
 public protocol IResourceProvider {
   func isDark() -> Swift.Bool
-  func getString(key: Swift.String) -> Swift.String
+  func getString(key: Swift.String) -> Swift.String?
   func getString(key: Swift.String, withValues values: [any Swift.CVarArg]) -> Swift.String
   func getColor(key: Swift.String) -> UIKit.UIColor
   func getUserInterfaceStyle() -> UIKit.UIUserInterfaceStyle
@@ -6221,8 +6229,11 @@ public protocol IAppDelegate {
   func canUseBiometryAuth(app: any OpenWeb3Lib.IMiniApp) -> Swift.Bool
   func updateBiometryToken(app: any OpenWeb3Lib.IMiniApp, token: Swift.String?, reason: Swift.String?) async -> (Swift.Bool, Swift.String?)
   func openBiometrySettings(app: any OpenWeb3Lib.IMiniApp) async
-  func shareWebApp(app: any OpenWeb3Lib.IMiniApp)
   func onApiError(error: OpenWeb3Lib.ApiError)
+  func onMinimization(app: any OpenWeb3Lib.IMiniApp)
+  func onMaximize(app: any OpenWeb3Lib.IMiniApp)
+  func onMoreButtonClick(app: any OpenWeb3Lib.IMiniApp, menus: [Swift.String]) -> Swift.Bool
+  func onClickMenu(app: any OpenWeb3Lib.IMiniApp, type: Swift.String)
 }
 public struct ShareDto {
   public let type: Swift.String
