@@ -26,7 +26,7 @@
 }
 
 -(void) startAction {
-    [[MiniSDKManager shared] launchWithUrlWithVc:self url:@"https://openweb3.io/MatrixBot102/mt_wallet"];
+    [[MiniSDKManager shared] launchWithUrlWithVc:self url:@"https://openweb3.io/apps/10" type:@"MINIAPP"];
 }
 @end
 
