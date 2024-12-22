@@ -1,13 +1,10 @@
 
 import UIKit
-import OpenWeb3Lib
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        MiniSDKManager.shared.signIn()
         
         if let shortcutItem = launchOptions?[.shortcutItem] as? UIApplicationShortcutItem {
             return MiniSDKManager.shared.handleShortcutItem(shortcutItem)

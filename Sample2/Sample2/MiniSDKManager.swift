@@ -64,6 +64,7 @@ class MiniSDKManager: NSObject, IAppDelegate {
     func signIn() {
         self.openPlatformPlugin.signIn(
             verifier: "123",
+            isDev: false,
             idTokenProvider: tokenProvider,
             onVerifierSuccess: { [weak self] in
                 // Do something
@@ -91,7 +92,9 @@ class MiniSDKManager: NSObject, IAppDelegate {
                 .floatWindowSize(width: 90.0, height: 159.0)
                 .build()
             
-           miniAppService.setup(config: appConfig)
+            miniAppService.setup(config: appConfig) {
+                self.signIn()
+            }
         }
     }
     
@@ -221,6 +224,16 @@ class MiniSDKManager: NSObject, IAppDelegate {
     }
     
     /**
+     分享链接或者文本。
+     
+     - Parameters:
+        - linkOrText: 分享链接或者文本。
+    */
+    func shareLinkOrText(linkOrText: String) {
+        
+    }
+    
+    /**
      * 检测当前会话是否支持并授权了发消息功能
      * @return Boolean
      */
@@ -312,14 +325,15 @@ class MiniSDKManager: NSObject, IAppDelegate {
                 let chatViewController = ChatViewController()
                 miniAppVc.present(chatViewController, animated: true)
             }
-        }
-        else if type == "SHARE" {
+        } else if type == "SHARE" {
             Task {
                 let shareInfo = await app.getShareInfo()
                 guard let title = shareInfo?.title else {
                     return
                 }
             }
+        } else if type == "SHORTCUT" {
+            // TODO
         }
     }
 

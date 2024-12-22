@@ -12,11 +12,11 @@ target 'Sample2' do
   # Pods for Sample2
   xcode_version = %x(xcodebuild -version).strip
   if xcode_version.include?("Xcode 15")
-    pod 'OpenWeb3Lib', '1.0.3-swift5.9'
+    pod 'OpenWeb3Lib', '1.0.4-swift5.9'
   elsif xcode_version.include?("Xcode 16.0")
-    pod 'OpenWeb3Lib', '1.0.3-swift6.0'
+    pod 'OpenWeb3Lib', '1.0.4-swift6.0'
   else
-    pod 'OpenWeb3Lib', '1.0.3-swift6.0.2'
+    pod 'OpenWeb3Lib', '1.0.4-swift6.0.2'
   end
 
 end
