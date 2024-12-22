@@ -6007,6 +6007,7 @@ public func runOn<T, E>(_ queue: OpenWeb3Lib.Queue) -> (OpenWeb3Lib.Signal<T, E>
 public func runOn<T, E>(_ threadPool: OpenWeb3Lib.ThreadPool) -> (OpenWeb3Lib.Signal<T, E>) -> OpenWeb3Lib.Signal<T, E>
 public let LRUCacheMemoryWarningNotification: Foundation.NSNotification.Name
 public enum ApiError : Swift.Error {
+  case waitForSetup
   case authInvalid
   case invalidURL
   case encodingFailed
@@ -6017,18 +6018,43 @@ public enum ApiError : Swift.Error {
   case invalidParameter(Swift.String)
 }
 public struct BotInfo : Swift.Codable {
+  public let id: Swift.String?
   public let name: Swift.String?
   public let token: Swift.String?
+  public let userId: Swift.String?
+  public let provider: Swift.String?
+  public let identifier: Swift.String?
   public let bio: Swift.String?
   public let avatarUrl: Swift.String?
-  public let command: [OpenWeb3Lib.Command]?
+  public let metadata: [Swift.String : Swift.String?]?
+  public let commands: [OpenWeb3Lib.Command]?
+  public let createdAt: Swift.String?
+  public let updatedAt: Swift.String?
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct Command : Swift.Codable {
-  public let name: Swift.String?
-  public let action: Swift.String?
+  public let command: Swift.String?
+  public let type: Swift.String?
   public let description: Swift.String?
+  public let options: [OpenWeb3Lib.Option]?
+  public let scope: OpenWeb3Lib.Scope?
+  public let languageCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Option : Swift.Codable {
+  public let name: Swift.String?
+  public let type: Swift.String?
+  public let required: Swift.Bool?
+  public let description: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Scope : Swift.Codable {
+  public let type: Swift.String?
+  public let chatId: Swift.String?
+  public let userId: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -6235,6 +6261,7 @@ public protocol IAppDelegate {
   #if compiler(>=5.3) && $AsyncAwait
   func switchInlineQuery(app: any OpenWeb3Lib.IMiniApp, query: Swift.String, types: [Swift.String]) async -> Swift.Bool
   #endif
+  func shareLinkOrText(linkOrText: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
   func checkPeerMessageAccess(app: any OpenWeb3Lib.IMiniApp) async -> Swift.Bool
   #endif
@@ -6281,7 +6308,7 @@ public struct ShareDto {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objcMembers open class MiniAppService {
+@objc @_inheritsConvenienceInitializers @objcMembers open class MiniAppService : ObjectiveC.NSObject {
   @objc open func load() -> Swift.Bool
   @objc open func unload()
   #if compiler(>=5.3) && $AsyncAwait
@@ -6296,7 +6323,7 @@ public struct ShareDto {
   #if compiler(>=5.3) && $AsyncAwait
   open func getDAppInfoById(dappId: Swift.String) async -> Swift.Result<OpenWeb3Lib.DAppDto, OpenWeb3Lib.ApiError>
   #endif
-  open func setup(config: OpenWeb3Lib.AppConfig)
+  open func setup(config: OpenWeb3Lib.AppConfig, complete: @escaping () -> Swift.Void)
   @objc open func updateTheme(userInterfaceStyle: UIKit.UIUserInterfaceStyle)
   @objc open func updateLanguage(languageCode: Swift.String)
   open func preload(config: OpenWeb3Lib.WebAppLaunchParameters)
@@ -6305,6 +6332,7 @@ public struct ShareDto {
   open func getContext() -> (any OpenWeb3Lib.AccountContext)?
   @objc open func clearCache()
   @objc open func dismissAll()
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objcMembers public class OpenPlatformPlugin : OpenWeb3Lib.Plugin {
@@ -6312,12 +6340,12 @@ public struct ShareDto {
   @objc open func unLoad()
   @objc open func getName() -> Swift.String
   #if compiler(>=5.3) && $AsyncAwait
-  open func signIn(verifier: Swift.String, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
+  open func signIn(verifier: Swift.String, isDev: Swift.Bool = false, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
   #endif
   @objc open func signOut()
   @objc open func isVerified() -> Swift.Bool
   open func getBotService() -> (any OpenWeb3Lib.BotService)?
-  open func getMiniAppService() -> OpenWeb3Lib.MiniAppService?
+  @objc open func getMiniAppService() -> OpenWeb3Lib.MiniAppService?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GridNodeScrollerView : UIKit.UIScrollView {

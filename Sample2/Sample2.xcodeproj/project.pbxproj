@@ -15,6 +15,8 @@
 		CE76CDB228F1B820001342AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE76CDB028F1B820001342AD /* LaunchScreen.storyboard */; };
 		E6C1E05459E3DBB3F6D8DC10 /* Pods_Sample2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B387BA4C6D18AD68427B474E /* Pods_Sample2.framework */; };
 		F9036D512CC6A83D00F8B355 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F9036D502CC6A83D00F8B355 /* Podfile */; };
+		F912CC672CF797AD00500844 /* WKScriptMessage+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F912CC662CF797AD00500844 /* WKScriptMessage+JSON.swift */; };
+		F912CC692CF797F900500844 /* DAppMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F912CC682CF797F900500844 /* DAppMethod.swift */; };
 		F916490D2C883159005BE2B2 /* icon_close.png in Resources */ = {isa = PBXBuildFile; fileRef = F916490A2C883158005BE2B2 /* icon_close.png */; };
 		F916490E2C883159005BE2B2 /* icon_share.png in Resources */ = {isa = PBXBuildFile; fileRef = F916490B2C883159005BE2B2 /* icon_share.png */; };
 		F916490F2C883159005BE2B2 /* icon_star.png in Resources */ = {isa = PBXBuildFile; fileRef = F916490C2C883159005BE2B2 /* icon_star.png */; };
@@ -25,6 +27,11 @@
 		F97F9BD02C4A510B003833F2 /* miniapp-web-app.js in Resources */ = {isa = PBXBuildFile; fileRef = F97F9BCD2C4A510B003833F2 /* miniapp-web-app.js */; };
 		F97F9BD12C4A510B003833F2 /* wallet.html in Resources */ = {isa = PBXBuildFile; fileRef = F97F9BCE2C4A510B003833F2 /* wallet.html */; };
 		F9C883F12C1C2EF900464EDF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C883F02C1C2EF900464EDF /* ChatViewController.swift */; };
+		F9EB3A462CF78EAE00BECA8F /* TrustWeb3Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB3A452CF78EAD00BECA8F /* TrustWeb3Provider.swift */; };
+		F9EB3A482CF78EDA00BECA8F /* ProviderNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB3A472CF78EDA00BECA8F /* ProviderNetwork.swift */; };
+		F9EB3A4A2CF78EF000BECA8F /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EB3A492CF78EF000BECA8F /* WKWebView+Extension.swift */; };
+		F9EB3A4D2CF78F0E00BECA8F /* trust-min.js in Resources */ = {isa = PBXBuildFile; fileRef = F9EB3A4C2CF78F0E00BECA8F /* trust-min.js */; };
+		F9EB3A4E2CF78F0E00BECA8F /* dAppInject.js in Resources */ = {isa = PBXBuildFile; fileRef = F9EB3A4B2CF78F0E00BECA8F /* dAppInject.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,8 @@
 		CE76CDB128F1B820001342AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE76CDB328F1B820001342AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9036D502CC6A83D00F8B355 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F912CC662CF797AD00500844 /* WKScriptMessage+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKScriptMessage+JSON.swift"; sourceTree = "<group>"; };
+		F912CC682CF797F900500844 /* DAppMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAppMethod.swift; sourceTree = "<group>"; };
 		F916490A2C883158005BE2B2 /* icon_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_close.png; sourceTree = "<group>"; };
 		F916490B2C883159005BE2B2 /* icon_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share.png; sourceTree = "<group>"; };
 		F916490C2C883159005BE2B2 /* icon_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star.png; sourceTree = "<group>"; };
@@ -52,6 +61,11 @@
 		F97F9BCD2C4A510B003833F2 /* miniapp-web-app.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "miniapp-web-app.js"; sourceTree = "<group>"; };
 		F97F9BCE2C4A510B003833F2 /* wallet.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wallet.html; sourceTree = "<group>"; };
 		F9C883F02C1C2EF900464EDF /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F9EB3A452CF78EAD00BECA8F /* TrustWeb3Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustWeb3Provider.swift; sourceTree = "<group>"; };
+		F9EB3A472CF78EDA00BECA8F /* ProviderNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderNetwork.swift; sourceTree = "<group>"; };
+		F9EB3A492CF78EF000BECA8F /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
+		F9EB3A4B2CF78F0E00BECA8F /* dAppInject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = dAppInject.js; sourceTree = "<group>"; };
+		F9EB3A4C2CF78F0E00BECA8F /* trust-min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "trust-min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,11 @@
 		CE76CDA428F1B820001342AD /* Sample2 */ = {
 			isa = PBXGroup;
 			children = (
+				F912CC682CF797F900500844 /* DAppMethod.swift */,
+				F912CC662CF797AD00500844 /* WKScriptMessage+JSON.swift */,
+				F9EB3A492CF78EF000BECA8F /* WKWebView+Extension.swift */,
+				F9EB3A472CF78EDA00BECA8F /* ProviderNetwork.swift */,
+				F9EB3A452CF78EAD00BECA8F /* TrustWeb3Provider.swift */,
 				F964905A2C773500006B6EF7 /* OC */,
 				F96490512C6D9919006B6EF7 /* ActionBarContainer.swift */,
 				F9C883F02C1C2EF900464EDF /* ChatViewController.swift */,
@@ -126,6 +145,8 @@
 		F97F9BD22C4A5115003833F2 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F9EB3A4B2CF78F0E00BECA8F /* dAppInject.js */,
+				F9EB3A4C2CF78F0E00BECA8F /* trust-min.js */,
 				F916490A2C883158005BE2B2 /* icon_close.png */,
 				F916490B2C883159005BE2B2 /* icon_share.png */,
 				F916490C2C883159005BE2B2 /* icon_star.png */,
@@ -212,6 +233,8 @@
 				F97F9BD12C4A510B003833F2 /* wallet.html in Resources */,
 				CE76CDB228F1B820001342AD /* LaunchScreen.storyboard in Resources */,
 				CE76CDAF28F1B820001342AD /* Assets.xcassets in Resources */,
+				F9EB3A4D2CF78F0E00BECA8F /* trust-min.js in Resources */,
+				F9EB3A4E2CF78F0E00BECA8F /* dAppInject.js in Resources */,
 				CE76CDAD28F1B820001342AD /* Main.storyboard in Resources */,
 				F916490D2C883159005BE2B2 /* icon_close.png in Resources */,
 				F916490E2C883159005BE2B2 /* icon_share.png in Resources */,
@@ -267,10 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EB3A482CF78EDA00BECA8F /* ProviderNetwork.swift in Sources */,
+				F912CC692CF797F900500844 /* DAppMethod.swift in Sources */,
+				F9EB3A462CF78EAE00BECA8F /* TrustWeb3Provider.swift in Sources */,
 				CE76CDAA28F1B820001342AD /* ViewController.swift in Sources */,
+				F9EB3A4A2CF78EF000BECA8F /* WKWebView+Extension.swift in Sources */,
 				CE76CDA628F1B820001342AD /* AppDelegate.swift in Sources */,
 				F96490582C7734F5006B6EF7 /* OCViewController.m in Sources */,
 				F9C883F12C1C2EF900464EDF /* ChatViewController.swift in Sources */,
+				F912CC672CF797AD00500844 /* WKScriptMessage+JSON.swift in Sources */,
 				F96490592C7734F5006B6EF7 /* MiniSDKManager.swift in Sources */,
 				F96490522C6D9919006B6EF7 /* ActionBarContainer.swift in Sources */,
 				CE76CDA828F1B820001342AD /* SceneDelegate.swift in Sources */,
