@@ -1,6 +1,15 @@
 import UIKit
 import OpenWeb3Lib
 
+extension UIColor {
+    convenience init(rgb: Int) {
+        let red = CGFloat((rgb >> 16) & 0xFF) / 255.0
+        let green = CGFloat((rgb >> 8) & 0xFF) / 255.0
+        let blue = CGFloat(rgb & 0xFF) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: 1.0)
+    }
+}
+
 class ChatViewController: UIViewController {
     
     private var tableView: UITableView!
@@ -60,11 +69,11 @@ class ChatViewController: UIViewController {
     }
     
     private func setupInputContainerView() {
-        let context = miniAppService.getContext()!
-        
+        let isDark = false
+
         inputContainerView = UIView()
         inputContainerView.translatesAutoresizingMaskIntoConstraints = false
-        inputContainerView.backgroundColor = context.resourceProvider.getColor(key: KEY_SECONDARY_BG_COLOR)
+        inputContainerView.backgroundColor = (isDark ? UIColor(rgb: 0x000000) : UIColor(rgb: 0xefeff4))
         view.addSubview(inputContainerView)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
