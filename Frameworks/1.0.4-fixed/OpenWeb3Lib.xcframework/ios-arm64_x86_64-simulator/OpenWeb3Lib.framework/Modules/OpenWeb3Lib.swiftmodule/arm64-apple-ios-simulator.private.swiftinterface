@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OpenWeb3Lib
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OpenWeb3Lib
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import Accelerate
 import AddressBook
@@ -67,12 +68,12 @@ public enum InteractiveTransitionGestureRecognizerEdgeWidth {
   case constant(CoreFoundation.CGFloat)
   case widthMultiplier(factor: CoreFoundation.CGFloat, min: CoreFoundation.CGFloat, max: CoreFoundation.CGFloat)
 }
-@objc @_Concurrency.MainActor @preconcurrency public class InteractiveTransitionGestureRecognizer : UIKit.UIPanGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency public init(target: Any?, action: ObjectiveC.Selector?, allowedDirections: @escaping (CoreFoundation.CGPoint) -> OpenWeb3Lib.InteractiveTransitionGestureRecognizerDirections, edgeWidth: OpenWeb3Lib.InteractiveTransitionGestureRecognizerEdgeWidth = .constant(16.0))
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func reset()
-  @_Concurrency.MainActor @preconcurrency public func cancel()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+@objc @_Concurrency.MainActor(unsafe) public class InteractiveTransitionGestureRecognizer : UIKit.UIPanGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public init(target: Any?, action: ObjectiveC.Selector?, allowedDirections: @escaping (CoreFoundation.CGPoint) -> OpenWeb3Lib.InteractiveTransitionGestureRecognizerDirections, edgeWidth: OpenWeb3Lib.InteractiveTransitionGestureRecognizerEdgeWidth = .constant(16.0))
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func reset()
+  @_Concurrency.MainActor(unsafe) public func cancel()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
   @objc deinit
 }
 public protocol Disposable : AnyObject {
@@ -273,25 +274,25 @@ public enum ContextGestureTransition {
   case ended(CoreFoundation.CGFloat)
 }
 public func cancelParentGestures(view: UIKit.UIView, ignore: [UIKit.UIGestureRecognizer] = [])
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class ContextGesture : UIKit.UIGestureRecognizer, UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency final public var beginDelay: Swift.Double
-  @_Concurrency.MainActor @preconcurrency final public var activateOnTap: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency final public var shouldBegin: ((CoreFoundation.CGPoint) -> Swift.Bool)?
-  @_Concurrency.MainActor @preconcurrency final public var activationProgress: ((CoreFoundation.CGFloat, OpenWeb3Lib.ContextGestureTransition) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var activated: ((OpenWeb3Lib.ContextGesture, CoreFoundation.CGPoint) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var externalUpdated: ((UIKit.UIView?, CoreFoundation.CGPoint) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var externalEnded: (((UIKit.UIView?, CoreFoundation.CGPoint)?) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var activatedAfterCompletion: ((CoreFoundation.CGPoint, Swift.Bool) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var cancelGesturesOnActivation: (() -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func reset()
-  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency final public func cancel()
-  @_Concurrency.MainActor @preconcurrency final public func endPressedAppearance()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ContextGesture : UIKit.UIGestureRecognizer, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) final public var beginDelay: Swift.Double
+  @_Concurrency.MainActor(unsafe) final public var activateOnTap: Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public var shouldBegin: ((CoreFoundation.CGPoint) -> Swift.Bool)?
+  @_Concurrency.MainActor(unsafe) final public var activationProgress: ((CoreFoundation.CGFloat, OpenWeb3Lib.ContextGestureTransition) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var activated: ((OpenWeb3Lib.ContextGesture, CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var externalUpdated: ((UIKit.UIView?, CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var externalEnded: (((UIKit.UIView?, CoreFoundation.CGPoint)?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var activatedAfterCompletion: ((CoreFoundation.CGPoint, Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var cancelGesturesOnActivation: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+  @_Concurrency.MainActor(unsafe) @objc override final public func reset()
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) final public func cancel()
+  @_Concurrency.MainActor(unsafe) final public func endPressedAppearance()
   @objc deinit
 }
 public let kCAMediaTimingFunctionSpring: Swift.String
@@ -331,7 +332,7 @@ extension QuartzCore.CALayer {
   public func cancelAnimationsRecursive(key: Swift.String)
 }
 extension UIKit.UIResponder {
-  @_Concurrency.MainActor @preconcurrency public static func currentFirst() -> UIKit.UIResponder?
+  @_Concurrency.MainActor(unsafe) public static func currentFirst() -> UIKit.UIResponder?
 }
 public func viewTreeContainsFirstResponder(view: UIKit.UIView) -> Swift.Bool
 public struct KeyShortcut : Swift.Hashable {
@@ -1206,25 +1207,25 @@ public enum TapLongTapOrDoubleTapGestureRecognizerAction {
   case fail
   case keepWithSingleTap
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class TapLongTapOrDoubleTapGestureRecognizer : UIKit.UIGestureRecognizer, UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency final public var lastRecognizedGestureAndLocation: (OpenWeb3Lib.TapLongTapOrDoubleTapGesture, CoreFoundation.CGPoint)? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class TapLongTapOrDoubleTapGestureRecognizer : UIKit.UIGestureRecognizer, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) final public var lastRecognizedGestureAndLocation: (OpenWeb3Lib.TapLongTapOrDoubleTapGesture, CoreFoundation.CGPoint)? {
     get
   }
-  @_Concurrency.MainActor @preconcurrency final public var tapActionAtPoint: ((CoreFoundation.CGPoint) -> OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizerAction)?
-  @_Concurrency.MainActor @preconcurrency final public var longTap: ((CoreFoundation.CGPoint, OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizer) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var secondaryTap: ((CoreFoundation.CGPoint, OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizer) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var externalUpdated: ((UIKit.UIView?, CoreFoundation.CGPoint) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var externalEnded: (((UIKit.UIView?, CoreFoundation.CGPoint)?) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var highlight: ((CoreFoundation.CGPoint?) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var hapticFeedback: OpenWeb3Lib.HapticFeedback?
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
-  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override final public func reset()
-  @_Concurrency.MainActor @preconcurrency final public func cancel()
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) final public var tapActionAtPoint: ((CoreFoundation.CGPoint) -> OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizerAction)?
+  @_Concurrency.MainActor(unsafe) final public var longTap: ((CoreFoundation.CGPoint, OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizer) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var secondaryTap: ((CoreFoundation.CGPoint, OpenWeb3Lib.TapLongTapOrDoubleTapGestureRecognizer) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var externalUpdated: ((UIKit.UIView?, CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var externalEnded: (((UIKit.UIView?, CoreFoundation.CGPoint)?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var highlight: ((CoreFoundation.CGPoint?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var hapticFeedback: OpenWeb3Lib.HapticFeedback?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func reset()
+  @_Concurrency.MainActor(unsafe) final public func cancel()
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
   @objc deinit
 }
 public struct PresentationResources {
@@ -1816,13 +1817,13 @@ final public class ThemeSettings : Swift.Codable, Swift.Equatable {
   public static func == (lhs: OpenWeb3Lib.ThemeSettings, rhs: OpenWeb3Lib.ThemeSettings) -> Swift.Bool
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class ListViewScroller : UIKit.UIScrollView, UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override final public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesShouldCancel(in view: UIKit.UIView) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override final public var isDecelerating: Swift.Bool {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ListViewScroller : UIKit.UIScrollView, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesShouldCancel(in view: UIKit.UIView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public var isDecelerating: Swift.Bool {
     @objc get
   }
   @objc deinit
@@ -1896,15 +1897,15 @@ final public class Localization : Swift.Codable, Swift.Equatable {
   public static func == (lhs: OpenWeb3Lib.Localization, rhs: OpenWeb3Lib.Localization) -> Swift.Bool
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class UITracingLayerView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency open func schedule(layout f: @escaping () -> Swift.Void)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var autoresizingMask: UIKit.UIView.AutoresizingMask {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UITracingLayerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open func schedule(layout f: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var autoresizingMask: UIKit.UIView.AutoresizingMask {
     @objc get
     @objc set(value)
   }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension Swift.String {
@@ -2407,17 +2408,17 @@ extension OpenWeb3Lib.Transition.DisappearWithGuide {
 extension OpenWeb3Lib.Transition.Update {
   public static let `default`: OpenWeb3Lib.Transition.Update
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class WindowPanRecognizer : UIKit.UIGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency final public var began: ((CoreFoundation.CGPoint) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var moved: ((CoreFoundation.CGPoint) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency final public var ended: ((CoreFoundation.CGPoint, CoreFoundation.CGPoint?) -> Swift.Void)?
-  @_Concurrency.MainActor @preconcurrency @objc override final public func reset()
-  @_Concurrency.MainActor @preconcurrency final public func cancel()
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WindowPanRecognizer : UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) final public var began: ((CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var moved: ((CoreFoundation.CGPoint) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) final public var ended: ((CoreFoundation.CGPoint, CoreFoundation.CGPoint?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override final public func reset()
+  @_Concurrency.MainActor(unsafe) final public func cancel()
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
   @objc deinit
 }
 public protocol Interpolatable {
@@ -2691,7 +2692,7 @@ public enum PresentationFontSize : Swift.Int32, Swift.CaseIterable {
   public init?(rawValue: Swift.Int32)
   public typealias AllCases = [OpenWeb3Lib.PresentationFontSize]
   public typealias RawValue = Swift.Int32
-  nonisolated public static var allCases: [OpenWeb3Lib.PresentationFontSize] {
+  public static var allCases: [OpenWeb3Lib.PresentationFontSize] {
     get
   }
   public var rawValue: Swift.Int32 {
@@ -2744,7 +2745,7 @@ public enum PresentationThemeBaseColor : Swift.Int32, Swift.CaseIterable {
   public init?(rawValue: Swift.Int32)
   public typealias AllCases = [OpenWeb3Lib.PresentationThemeBaseColor]
   public typealias RawValue = Swift.Int32
-  nonisolated public static var allCases: [OpenWeb3Lib.PresentationThemeBaseColor] {
+  public static var allCases: [OpenWeb3Lib.PresentationThemeBaseColor] {
     get
   }
   public var rawValue: Swift.Int32 {
@@ -2869,10 +2870,10 @@ final public class ConstantDisplayLinkAnimator {
   @objc deinit
   final public func invalidate()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class WindowKeyboardGestureRecognizerDelegate : ObjectiveC.NSObject, UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class WindowKeyboardGestureRecognizerDelegate : ObjectiveC.NSObject, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc final public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
   @objc deinit
 }
 extension OpenWeb3Lib.PresentationFontSize {
@@ -2892,10 +2893,10 @@ public enum Passthrough<T> {
 public func reduceLeft<T, E>(_ value: T, generator: @escaping (T, T) -> OpenWeb3Lib.Signal<(T, OpenWeb3Lib.Passthrough<T>), E>) -> (_ signal: OpenWeb3Lib.Signal<T, E>) -> OpenWeb3Lib.Signal<T, E>
 public func matchMinimumSystemVersion(major: Swift.Int, minor: Swift.Int = 0) -> Swift.Bool
 extension UIKit.UITextView {
-  @_Concurrency.MainActor @preconcurrency public var numberOfLines: Swift.Int {
+  @_Concurrency.MainActor(unsafe) public var numberOfLines: Swift.Int {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var isRTL: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) public var isRTL: Swift.Bool {
     get
   }
 }
@@ -3008,11 +3009,13 @@ final public class TelegramTheme : Swift.Equatable {
 public protocol BotService {
   func load() -> Swift.Bool
   func unload()
+  #if compiler(>=5.3) && $AsyncAwait
   func getBotInfo(botId: Swift.String) async -> Swift.Result<OpenWeb3Lib.BotInfo, OpenWeb3Lib.ApiError>
+  #endif
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class ListViewTapGestureRecognizer : UIKit.UITapGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency final public func cancel()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class ListViewTapGestureRecognizer : UIKit.UITapGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) final public func cancel()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(target: Any?, action: ObjectiveC.Selector?)
   @objc deinit
 }
 public let defaultDarkPresentationTheme: OpenWeb3Lib.PresentationTheme
@@ -3466,8 +3469,12 @@ public protocol IMiniApp : AnyObject {
   func reloadPage()
   func requestDismiss(_ force: Swift.Bool) -> Swift.Bool
   func getVC() -> UIKit.UIViewController?
+  #if compiler(>=5.3) && $AsyncAwait
   func getShareUrl() async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func getShareInfo() async -> OpenWeb3Lib.ShareDto?
+  #endif
   func isSystem() -> Swift.Bool
   func minimization()
   func maximize()
@@ -3484,16 +3491,30 @@ public protocol IAppDelegate {
   var qrcodeProvider: (any OpenWeb3Lib.IMiniApp, Swift.String?, @escaping (Swift.String?) -> Swift.Void) -> UIKit.UINavigationController? { get }
   var customMethodProvider: (any OpenWeb3Lib.IMiniApp, Swift.String, Swift.String?, @escaping (Swift.String?) -> Swift.Void) -> Swift.Bool { get }
   var attachActionProvider: (any OpenWeb3Lib.IMiniApp, Swift.String?, Swift.String) -> Swift.Void { get }
+  #if compiler(>=5.3) && $AsyncAwait
   var schemeProvider: (any OpenWeb3Lib.IMiniApp, Swift.String) async -> Swift.Bool { get }
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func switchInlineQuery(app: any OpenWeb3Lib.IMiniApp, query: Swift.String, types: [Swift.String]) async -> Swift.Bool
+  #endif
   func shareLinkOrText(linkOrText: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
   func checkPeerMessageAccess(app: any OpenWeb3Lib.IMiniApp) async -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func requestPeerMessageAccess(app: any OpenWeb3Lib.IMiniApp) async -> Swift.Bool
+  #endif
   func sendMessageToPeer(app: any OpenWeb3Lib.IMiniApp, content: Swift.String?) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
   func requestPhoneNumberToPeer(app: any OpenWeb3Lib.IMiniApp) async -> Swift.Bool
+  #endif
   func canUseBiometryAuth(app: any OpenWeb3Lib.IMiniApp) -> Swift.Bool
+  #if compiler(>=5.3) && $AsyncAwait
   func updateBiometryToken(app: any OpenWeb3Lib.IMiniApp, token: Swift.String?, reason: Swift.String?) async -> (Swift.Bool, Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func openBiometrySettings(app: any OpenWeb3Lib.IMiniApp) async
+  #endif
   func onApiError(error: OpenWeb3Lib.ApiError)
   func onMinimization(app: any OpenWeb3Lib.IMiniApp)
   func onMaximize(app: any OpenWeb3Lib.IMiniApp)
@@ -3526,10 +3547,18 @@ public struct ShareDto {
 @objc @_inheritsConvenienceInitializers open class MiniAppService : ObjectiveC.NSObject {
   open func load() -> Swift.Bool
   open func unload()
+  #if compiler(>=5.3) && $AsyncAwait
   open func batchGetMiniApps(appIds: [Swift.String]) async -> Swift.Result<OpenWeb3Lib.MiniAppResponse, OpenWeb3Lib.ApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   open func getMiniAppInfoById(appId: Swift.String) async -> Swift.Result<OpenWeb3Lib.MiniAppDto, OpenWeb3Lib.ApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   open func getMiniAppInfoByNames(botIdOrName: Swift.String, appName: Swift.String) async -> Swift.Result<OpenWeb3Lib.MiniAppDto, OpenWeb3Lib.ApiError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   open func getDAppInfoById(dappId: Swift.String) async -> Swift.Result<OpenWeb3Lib.DAppDto, OpenWeb3Lib.ApiError>
+  #endif
   open func setup(config: OpenWeb3Lib.AppConfig, complete: @escaping () -> Swift.Void)
   open func updateTheme(userInterfaceStyle: UIKit.UIUserInterfaceStyle)
   open func updateLanguage(languageCode: Swift.String)
@@ -3545,20 +3574,22 @@ public struct ShareDto {
   open func load() -> Swift.Bool
   open func unLoad()
   open func getName() -> Swift.String
+  #if compiler(>=5.3) && $AsyncAwait
   open func signIn(verifier: Swift.String, isDev: Swift.Bool = false, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
+  #endif
   open func signOut()
   open func isVerified() -> Swift.Bool
   open func getBotService() -> (any OpenWeb3Lib.BotService)?
   open func getMiniAppService() -> OpenWeb3Lib.MiniAppService?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class GridNodeScrollerView : UIKit.UIScrollView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GridNodeScrollerView : UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
     @objc get
   }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesShouldCancel(in view: UIKit.UIView) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesShouldCancel(in view: UIKit.UIView) -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class TempBoxFile {
@@ -4636,7 +4667,6 @@ extension OpenWeb3Lib.PresentationFontSize : Swift.RawRepresentable {}
 extension OpenWeb3Lib.PresentationThemeBaseColor : Swift.Equatable {}
 extension OpenWeb3Lib.PresentationThemeBaseColor : Swift.Hashable {}
 extension OpenWeb3Lib.PresentationThemeBaseColor : Swift.RawRepresentable {}
-extension OpenWeb3Lib.WindowKeyboardGestureRecognizerDelegate : Swift.Sendable {}
 extension OpenWeb3Lib.TelegramBaseTheme : Swift.Equatable {}
 extension OpenWeb3Lib.TelegramBaseTheme : Swift.Hashable {}
 extension OpenWeb3Lib.TelegramBaseTheme : Swift.RawRepresentable {}
