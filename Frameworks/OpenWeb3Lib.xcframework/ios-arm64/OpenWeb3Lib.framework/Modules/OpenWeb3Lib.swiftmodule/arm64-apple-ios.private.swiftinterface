@@ -124,15 +124,6 @@ public protocol AIService {
   func unLoad()
   func completion(_ req: OpenWeb3Lib.CompletionRequest)
 }
-public enum PromptControllerTitleFont {
-  case regular
-  case bold
-  public static func == (a: OpenWeb3Lib.PromptControllerTitleFont, b: OpenWeb3Lib.PromptControllerTitleFont) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 public protocol BotService {
   func load() -> Swift.Bool
   func unload()
@@ -3592,6 +3583,15 @@ extension OpenWeb3Lib.TempBox {
   public typealias File = OpenWeb3Lib.TempBoxFile
   public typealias Directory = OpenWeb3Lib.TempBoxDirectory
 }
+public enum PromptControllerTitleFont {
+  case regular
+  case bold
+  public static func == (a: OpenWeb3Lib.PromptControllerTitleFont, b: OpenWeb3Lib.PromptControllerTitleFont) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public func horizontalContainerFillingSizeForLayout(layout: OpenWeb3Lib.ContainerViewLayout, sideInset: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
 public protocol TelegramMediaResource : OpenWeb3Lib.MediaResource, OpenWeb3Lib.PostboxCoding {
 }
@@ -4507,8 +4507,6 @@ public protocol Plugin {
   func unLoad()
   func getName() -> Swift.String
 }
-extension OpenWeb3Lib.PromptControllerTitleFont : Swift.Equatable {}
-extension OpenWeb3Lib.PromptControllerTitleFont : Swift.Hashable {}
 extension OpenWeb3Lib.Source : Swift.Equatable {}
 extension OpenWeb3Lib.Source : Swift.Hashable {}
 extension OpenWeb3Lib.PresentationFontSize : Swift.Equatable {}
@@ -4586,6 +4584,8 @@ extension OpenWeb3Lib.AtomicLockError : Swift.Hashable {}
 extension OpenWeb3Lib.CloudPeerPhotoSizeSpec : Swift.Equatable {}
 extension OpenWeb3Lib.CloudPeerPhotoSizeSpec : Swift.Hashable {}
 extension OpenWeb3Lib.CloudPeerPhotoSizeSpec : Swift.RawRepresentable {}
+extension OpenWeb3Lib.PromptControllerTitleFont : Swift.Equatable {}
+extension OpenWeb3Lib.PromptControllerTitleFont : Swift.Hashable {}
 extension OpenWeb3Lib.ActionSheetControllerThemeBackgroundType : Swift.Equatable {}
 extension OpenWeb3Lib.ActionSheetControllerThemeBackgroundType : Swift.Hashable {}
 extension OpenWeb3Lib.Transition.DisappearWithGuide.Stage : Swift.Equatable {}
