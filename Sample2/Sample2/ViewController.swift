@@ -58,7 +58,7 @@ class WalletBridgeProvider : BridgeProvider {
     var cosmosChains = ["osmosis-1", "cosmoshub", "cosmoshub-4", "kava_2222-10", "evmos_9001-2"]
     var currentCosmosChain = "osmosis-1"
     
-    func onWebViewCreated(_ webView: WKWebView) {
+    func onWebViewCreated(_ webView: WKWebView, parentVC: UIViewController) {
         inject(contentController: webView.configuration.userContentController)
     }
     
