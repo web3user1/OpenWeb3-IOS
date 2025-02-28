@@ -74,7 +74,7 @@
           {
             "kind": "Function",
             "name": "onWebViewCreated",
-            "printedName": "onWebViewCreated(_:)",
+            "printedName": "onWebViewCreated(_:parentVC:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -86,11 +86,17 @@
                 "name": "WKWebView",
                 "printedName": "WebKit.WKWebView",
                 "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11OpenWeb3Lib14BridgeProviderP16onWebViewCreatedyySo05WKWebH0CF",
-            "mangledName": "$s11OpenWeb3Lib14BridgeProviderP16onWebViewCreatedyySo05WKWebH0CF",
+            "usr": "s:11OpenWeb3Lib14BridgeProviderP16onWebViewCreated_8parentVCySo05WKWebH0C_So16UIViewControllerCtF",
+            "mangledName": "$s11OpenWeb3Lib14BridgeProviderP16onWebViewCreated_8parentVCySo05WKWebH0C_So16UIViewControllerCtF",
             "moduleName": "OpenWeb3Lib",
             "genericSig": "<τ_0_0 where τ_0_0 : OpenWeb3Lib.BridgeProvider>",
             "sugared_genericSig": "<Self where Self : OpenWeb3Lib.BridgeProvider>",
@@ -4447,6 +4453,48 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inlineButtonCallback",
+            "printedName": "inlineButtonCallback(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.Bool, OpenWeb3Lib.ApiError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiError",
+                    "printedName": "OpenWeb3Lib.ApiError",
+                    "usr": "s:11OpenWeb3Lib8ApiErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InlineButtonCallbackParams",
+                "printedName": "OpenWeb3Lib.InlineButtonCallbackParams",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11OpenWeb3Lib10BotServiceP20inlineButtonCallbackys6ResultOySbAA8ApiErrorOGAA06InlinegH6ParamsVYaF",
+            "mangledName": "$s11OpenWeb3Lib10BotServiceP20inlineButtonCallbackys6ResultOySbAA8ApiErrorOGAA06InlinegH6ParamsVYaF",
+            "moduleName": "OpenWeb3Lib",
+            "genericSig": "<τ_0_0 where τ_0_0 : OpenWeb3Lib.BotService>",
+            "sugared_genericSig": "<Self where Self : OpenWeb3Lib.BotService>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -4956,6 +5004,277 @@
         "moduleName": "OpenWeb3Lib",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InlineButtonCallbackParams",
+        "printedName": "InlineButtonCallbackParams",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "chatId",
+            "printedName": "chatId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV6chatIdSSvp",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV6chatIdSSvp",
+            "moduleName": "OpenWeb3Lib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV6chatIdSSvg",
+                "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV6chatIdSSvg",
+                "moduleName": "OpenWeb3Lib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "botId",
+            "printedName": "botId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV5botIdSSvp",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV5botIdSSvp",
+            "moduleName": "OpenWeb3Lib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV5botIdSSvg",
+                "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV5botIdSSvg",
+                "moduleName": "OpenWeb3Lib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "messageId",
+            "printedName": "messageId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV9messageIdSSvp",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV9messageIdSSvp",
+            "moduleName": "OpenWeb3Lib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV9messageIdSSvg",
+                "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV9messageIdSSvg",
+                "moduleName": "OpenWeb3Lib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callbackData",
+            "printedName": "callbackData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV12callbackDataSSvp",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV12callbackDataSSvp",
+            "moduleName": "OpenWeb3Lib",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV12callbackDataSSvg",
+                "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV12callbackDataSSvg",
+                "moduleName": "OpenWeb3Lib",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InlineButtonCallbackParams",
+                "printedName": "OpenWeb3Lib.InlineButtonCallbackParams",
+                "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "OpenWeb3Lib",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "OpenWeb3Lib",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11OpenWeb3Lib26InlineButtonCallbackParamsV",
+        "mangledName": "$s11OpenWeb3Lib26InlineButtonCallbackParamsV",
+        "moduleName": "OpenWeb3Lib",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -9098,7 +9417,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(any OpenWeb3Lib.IMiniApp) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -9107,16 +9426,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "IMiniApp",
+                        "printedName": "any OpenWeb3Lib.IMiniApp",
+                        "usr": "s:11OpenWeb3Lib8IMiniAppP"
                       }
                     ],
                     "hasDefaultArg": true
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11OpenWeb3Lib20DAppLaunchParametersC7BuilderC10completionyAEyycF",
-                "mangledName": "$s11OpenWeb3Lib20DAppLaunchParametersC7BuilderC10completionyAEyycF",
+                "usr": "s:11OpenWeb3Lib20DAppLaunchParametersC7BuilderC10completionyAEyAA8IMiniApp_pcF",
+                "mangledName": "$s11OpenWeb3Lib20DAppLaunchParametersC7BuilderC10completionyAEyAA8IMiniApp_pcF",
                 "moduleName": "OpenWeb3Lib",
                 "declAttributes": [
                   "AccessControl"
@@ -10329,7 +10649,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(any OpenWeb3Lib.IMiniApp) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -10338,16 +10658,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "IMiniApp",
+                        "printedName": "any OpenWeb3Lib.IMiniApp",
+                        "usr": "s:11OpenWeb3Lib8IMiniAppP"
                       }
                     ],
                     "hasDefaultArg": true
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11OpenWeb3Lib32WebAppLaunchWithDialogParametersC7BuilderC10completionyAEyycF",
-                "mangledName": "$s11OpenWeb3Lib32WebAppLaunchWithDialogParametersC7BuilderC10completionyAEyycF",
+                "usr": "s:11OpenWeb3Lib32WebAppLaunchWithDialogParametersC7BuilderC10completionyAEyAA05IMiniE0_pcF",
+                "mangledName": "$s11OpenWeb3Lib32WebAppLaunchWithDialogParametersC7BuilderC10completionyAEyAA05IMiniE0_pcF",
                 "moduleName": "OpenWeb3Lib",
                 "declAttributes": [
                   "AccessControl"
@@ -11153,7 +11474,7 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "() -> ()",
+                    "printedName": "(any OpenWeb3Lib.IMiniApp) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -11162,16 +11483,17 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
+                        "name": "IMiniApp",
+                        "printedName": "any OpenWeb3Lib.IMiniApp",
+                        "usr": "s:11OpenWeb3Lib8IMiniAppP"
                       }
                     ],
                     "hasDefaultArg": true
                   }
                 ],
                 "declKind": "Func",
-                "usr": "s:11OpenWeb3Lib32WebAppLaunchWithParentParametersC7BuilderC10completionyAEyycF",
-                "mangledName": "$s11OpenWeb3Lib32WebAppLaunchWithParentParametersC7BuilderC10completionyAEyycF",
+                "usr": "s:11OpenWeb3Lib32WebAppLaunchWithParentParametersC7BuilderC10completionyAEyAA05IMiniE0_pcF",
+                "mangledName": "$s11OpenWeb3Lib32WebAppLaunchWithParentParametersC7BuilderC10completionyAEyAA05IMiniE0_pcF",
                 "moduleName": "OpenWeb3Lib",
                 "declAttributes": [
                   "AccessControl"
@@ -20229,98 +20551,105 @@
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1098,
+      "offset": 1221,
       "length": 27,
       "value": "\"https:\/\/api.m.openweb3.io\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1154,
+      "offset": 1277,
       "length": 34,
       "value": "\"https:\/\/dev-mapi.mtsocialdao.com\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1466,
       "length": 20,
       "value": "\"\/api\/v1\/users\/auth\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1389,
+      "offset": 1512,
       "length": 21,
       "value": "\"\/api\/v1\/ai\/complete\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1436,
+      "offset": 1559,
       "length": 14,
       "value": "\"\/api\/v1\/bots\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1617,
+      "length": 24,
+      "value": "\"\/api\/v1\/callback\/query\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
+      "kind": "StringLiteral",
+      "offset": 1670,
       "length": 18,
       "value": "\"\/api\/v1\/miniapps\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1709,
       "length": 15,
       "value": "\"\/api\/v1\/dapps\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1750,
       "length": 15,
       "value": "\"\/api\/v1\/menus\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1605,
+      "offset": 1801,
       "length": 31,
       "value": "\"\/api\/v1\/custom_methods\/invoke\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1664,
+      "offset": 1860,
       "length": 22,
       "value": "\"\/api\/v1\/webpage\/open\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 1952,
       "length": 25,
       "value": "\"io.miniapp.networkQueue\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "BooleanLiteral",
-      "offset": 7924,
+      "offset": 8376,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "BooleanLiteral",
-      "offset": 8976,
+      "offset": 9428,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Data\/OpenWeb3Repository.swift",
       "kind": "IntegerLiteral",
-      "offset": 9971,
+      "offset": 10423,
       "length": 1,
       "value": "1"
     },
@@ -20383,49 +20712,49 @@
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8819,
+      "offset": 8776,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9744,
+      "offset": 9701,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9782,
+      "offset": 9739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19042,
+      "offset": 18999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 19138,
+      "offset": 19095,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "FloatLiteral",
-      "offset": 50010,
+      "offset": 50013,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/UI\/WebAppController.swift",
       "kind": "BooleanLiteral",
-      "offset": 78895,
+      "offset": 78878,
       "length": 5,
       "value": "false"
     },
@@ -22658,322 +22987,350 @@
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 630,
-      "length": 9,
-      "value": "\"user_id\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 728,
-      "length": 12,
-      "value": "\"avatar_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 788,
-      "length": 12,
-      "value": "\"created_at\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 826,
-      "length": 12,
-      "value": "\"updated_at\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 3692,
-      "length": 15,
-      "value": "\"language_code\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 6213,
+      "offset": 594,
       "length": 9,
       "value": "\"chat_id\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 6245,
-      "length": 9,
-      "value": "\"user_id\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 7327,
-      "length": 14,
-      "value": "\"access_token\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 7617,
-      "length": 5,
-      "value": "\"8.0\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8105,
-      "length": 8,
-      "value": "\"app_id\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8142,
-      "length": 15,
-      "value": "\"language_code\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8185,
-      "length": 14,
-      "value": "\"start_params\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8227,
-      "length": 14,
-      "value": "\"theme_params\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8313,
-      "length": 19,
-      "value": "\"tg_webapp_version\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8868,
-      "length": 9,
-      "value": "\"user_id\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8900,
-      "length": 9,
-      "value": "\"room_id\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8936,
-      "length": 13,
-      "value": "\"access_hash\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9274,
-      "length": 14,
-      "value": "\"redirect_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9311,
-      "length": 9,
-      "value": "\"is_risk\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9764,
-      "length": 10,
-      "value": "\"icon_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9800,
-      "length": 12,
-      "value": "\"banner_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9837,
-      "length": 11,
-      "value": "\"create_at\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 9873,
-      "length": 11,
-      "value": "\"update_at\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 10885,
-      "length": 12,
-      "value": "\"view_style\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 10929,
-      "length": 18,
-      "value": "\"navigation_style\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 10984,
-      "length": 24,
-      "value": "\"allow_horizontal_swipe\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 11043,
-      "length": 22,
-      "value": "\"allow_vertical_swipe\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 11622,
-      "length": 10,
-      "value": "\"icon_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 11658,
-      "length": 12,
-      "value": "\"banner_url\""
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 11692,
+      "offset": 625,
       "length": 8,
       "value": "\"bot_id\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 11724,
-      "length": 10,
-      "value": "\"bot_name\""
+      "offset": 659,
+      "length": 12,
+      "value": "\"message_id\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 11759,
+      "offset": 700,
+      "length": 15,
+      "value": "\"callback_data\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 1084,
+      "length": 12,
+      "value": "\"error_code\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 1643,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 1741,
+      "length": 12,
+      "value": "\"avatar_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 1801,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 1839,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 4705,
+      "length": 15,
+      "value": "\"language_code\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 7226,
+      "length": 9,
+      "value": "\"chat_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 7258,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 8340,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 8630,
+      "length": 5,
+      "value": "\"8.0\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9118,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9155,
+      "length": 15,
+      "value": "\"language_code\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9198,
+      "length": 14,
+      "value": "\"start_params\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9240,
+      "length": 14,
+      "value": "\"theme_params\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9326,
+      "length": 19,
+      "value": "\"tg_webapp_version\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9881,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9913,
+      "length": 9,
+      "value": "\"room_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 9949,
+      "length": 13,
+      "value": "\"access_hash\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 10287,
+      "length": 14,
+      "value": "\"redirect_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 10324,
+      "length": 9,
+      "value": "\"is_risk\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 10777,
+      "length": 10,
+      "value": "\"icon_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 10813,
+      "length": 12,
+      "value": "\"banner_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 10850,
       "length": 11,
       "value": "\"create_at\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 11795,
+      "offset": 10886,
       "length": 11,
       "value": "\"update_at\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 13890,
+      "offset": 11898,
+      "length": 12,
+      "value": "\"view_style\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 11942,
+      "length": 18,
+      "value": "\"navigation_style\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 11997,
+      "length": 24,
+      "value": "\"allow_horizontal_swipe\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12056,
+      "length": 22,
+      "value": "\"allow_vertical_swipe\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12635,
+      "length": 10,
+      "value": "\"icon_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12671,
+      "length": 12,
+      "value": "\"banner_url\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12705,
+      "length": 8,
+      "value": "\"bot_id\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12737,
+      "length": 10,
+      "value": "\"bot_name\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12772,
+      "length": 11,
+      "value": "\"create_at\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 12808,
+      "length": 11,
+      "value": "\"update_at\""
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 14903,
       "length": 11,
       "value": "\"prompt_id\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/Common\/Apis\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 14270,
+      "offset": 15283,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7681,
+      "offset": 7739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7719,
+      "offset": 7777,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7755,
+      "offset": 7813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7787,
+      "offset": 7845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7866,
+      "offset": 7924,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7898,
+      "offset": 7956,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 7931,
+      "offset": 7989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9496,
+      "offset": 9568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9531,
+      "offset": 9603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9610,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9648,
+      "offset": 9682,
       "length": 5,
       "value": "false"
     },
@@ -22981,286 +23338,293 @@
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
       "offset": 9720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9792,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9754,
+      "offset": 9826,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 9790,
+      "offset": 9862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15683,
+      "offset": 15791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15721,
+      "offset": 15829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15757,
+      "offset": 15865,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15789,
+      "offset": 15897,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15821,
+      "offset": 15929,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 15854,
+      "offset": 15962,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17468,
+      "offset": 17590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17503,
+      "offset": 17625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17575,
+      "offset": 17697,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17609,
+      "offset": 17731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 17645,
+      "offset": 17767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23478,
+      "offset": 23628,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23514,
+      "offset": 23664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23546,
+      "offset": 23696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23625,
+      "offset": 23775,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23657,
+      "offset": 23807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23690,
+      "offset": 23840,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 23720,
+      "offset": 23870,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 25934,
+      "offset": 26084,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 25981,
+      "offset": 26131,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 26024,
+      "offset": 26174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 26125,
+      "offset": 26275,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 26168,
+      "offset": 26318,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 26212,
+      "offset": 26362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 26253,
+      "offset": 26403,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "StringLiteral",
-      "offset": 37942,
+      "offset": 38092,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "IntegerLiteral",
-      "offset": 38041,
+      "offset": 38191,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "FloatLiteral",
-      "offset": 38241,
+      "offset": 38391,
       "length": 4,
       "value": "86.0"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "FloatLiteral",
-      "offset": 38287,
+      "offset": 38437,
       "length": 5,
       "value": "128.0"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "StringLiteral",
-      "offset": 41283,
+      "offset": 41433,
       "length": 9,
       "value": "\"MINIAPP\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "StringLiteral",
-      "offset": 41327,
+      "offset": 41477,
       "length": 9,
       "value": "\"WEBPAGE\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 41417,
+      "offset": 41567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "StringLiteral",
-      "offset": 41458,
+      "offset": 41608,
       "length": 10,
       "value": "\"OpenWeb3\""
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "Array",
-      "offset": 42412,
+      "offset": 42562,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 60331,
+      "offset": 60495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 60398,
+      "offset": 60562,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 60530,
+      "offset": 60694,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/OpenPlatform\/MiniApp\/MiniAppService.swift",
       "kind": "BooleanLiteral",
-      "offset": 60596,
+      "offset": 60760,
       "length": 5,
       "value": "false"
     },
@@ -27999,7 +28363,7 @@
     {
       "filePath": "\/Users\/zhibiaochen\/Desktop\/Develop\/web3\/OpenWeb3Lib-IOS\/Lib\/OpenWeb3Lib\/DisplayKit\/Display\/ViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22895,
+      "offset": 22795,
       "length": 5,
       "value": "false"
     },

@@ -25,7 +25,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol BridgeProvider {
-  func onWebViewCreated(_ webView: WebKit.WKWebView)
+  func onWebViewCreated(_ webView: WebKit.WKWebView, parentVC: UIKit.UIViewController)
   func onWebViewDestroy()
   func onWebPageLoaded()
   var navigationDelegate: () -> (any WebKit.WKNavigationDelegate)? { get set }
@@ -128,6 +128,7 @@ public protocol BotService {
   func load() -> Swift.Bool
   func unload()
   func getBotInfo(botId: Swift.String) async -> Swift.Result<OpenWeb3Lib.BotInfo, OpenWeb3Lib.ApiError>
+  func inlineButtonCallback(_ params: OpenWeb3Lib.InlineButtonCallbackParams) async -> Swift.Result<Swift.Bool, OpenWeb3Lib.ApiError>
 }
 public enum ApiError : Swift.Error {
   case waitForSetup
@@ -139,6 +140,14 @@ public enum ApiError : Swift.Error {
   case invalidData
   case decodingFailed
   case invalidParameter(Swift.String)
+}
+public struct InlineButtonCallbackParams : Swift.Codable {
+  public let chatId: Swift.String
+  public let botId: Swift.String
+  public let messageId: Swift.String
+  public let callbackData: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct BotInfo : Swift.Codable {
   public let id: Swift.String?
@@ -235,7 +244,7 @@ public struct MiniAppResponse : Swift.Codable {
     public func url(_ url: Swift.String?) -> OpenWeb3Lib.DAppLaunchParameters.Builder
     public func bridgeProvider(_ bridgeProvider: (any OpenWeb3Lib.BridgeProvider)?) -> OpenWeb3Lib.DAppLaunchParameters.Builder
     public func getActionBarNode(_ getActionBarNode: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> (CoreFoundation.CGSize, UIKit.UIView)?) -> OpenWeb3Lib.DAppLaunchParameters.Builder
-    public func completion(_ completion: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.DAppLaunchParameters.Builder
+    public func completion(_ completion: @escaping (any OpenWeb3Lib.IMiniApp) -> Swift.Void = { _ in }) -> OpenWeb3Lib.DAppLaunchParameters.Builder
     public func willDismiss(_ willDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.DAppLaunchParameters.Builder
     public func didDismiss(_ didDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.DAppLaunchParameters.Builder
     public func build() throws -> OpenWeb3Lib.DAppLaunchParameters
@@ -280,7 +289,7 @@ public struct MiniAppResponse : Swift.Codable {
     public func peer(_ peer: OpenWeb3Lib.PeerParams?) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func bridgeProvider(_ bridgeProvider: any OpenWeb3Lib.BridgeProvider) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func getActionBarNode(_ getActionBarNode: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> (CoreFoundation.CGSize, UIKit.UIView)?) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
-    public func completion(_ completion: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
+    public func completion(_ completion: @escaping (any OpenWeb3Lib.IMiniApp) -> Swift.Void = { _ in }) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func willDismiss(_ willDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func didDismiss(_ didDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithDialogParameters.Builder
     public func build() throws -> OpenWeb3Lib.WebAppLaunchWithDialogParameters
@@ -307,7 +316,7 @@ public struct MiniAppResponse : Swift.Codable {
     public func bridgeProvider(_ bridgeProvider: any OpenWeb3Lib.BridgeProvider) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
     public func getActionBarNode(_ getActionBarNode: @escaping (@escaping () -> Swift.Void, @escaping () -> Swift.Void) -> (CoreFoundation.CGSize, UIKit.UIView)?) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
     public func getInputContainerNode(_ getInputContainerNode: @escaping () -> (CoreFoundation.CGFloat, UIKit.UIView?)? = { return nil }) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
-    public func completion(_ completion: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
+    public func completion(_ completion: @escaping (any OpenWeb3Lib.IMiniApp) -> Swift.Void = { _ in }) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
     public func willDismiss(_ willDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
     public func didDismiss(_ didDismiss: @escaping () -> Swift.Void = {}) -> OpenWeb3Lib.WebAppLaunchWithParentParameters.Builder
     public func build() throws -> OpenWeb3Lib.WebAppLaunchWithParentParameters

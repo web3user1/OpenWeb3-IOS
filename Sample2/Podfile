@@ -9,6 +9,6 @@ target 'Sample2' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'OpenWeb3Lib', '1.0.4-fixed'
+  pod 'OpenWeb3Lib', '1.0.6'
 
 end
