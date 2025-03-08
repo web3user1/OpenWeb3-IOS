@@ -6,9 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="c0851c3d-508d-4f31-9889-27f05e415adf" name="Changes" comment="1.0.6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/arm64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.abi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftdoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftinterface" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/Modules/OpenWeb3Lib.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" beforeDir="false" afterPath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/OpenWeb3Lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frameworks/OpenWeb3Lib.xcframework/ios-arm64_x86_64-simulator/OpenWeb3Lib.framework/_CodeSignature/CodeResources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OpenWeb3Lib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/OpenWeb3Lib.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample2/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Sample2/Podfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sample2/Sample2.xcodeproj/project.xcworkspace/xcuserdata/zhibiaochen.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Sample2/Sample2.xcodeproj/project.xcworkspace/xcuserdata/zhibiaochen.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample2/Sample2/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Sample2/Sample2/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sample2/Sample2.xcworkspace/xcuserdata/zhibiaochen.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Sample2/Sample2.xcworkspace/xcuserdata/zhibiaochen.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +66,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/zhibiaochen/Desktop/Develop/web3/OpenWeb3-Github/OpenWeb3-IOS"
+    "last_opened_file_path": "/Users/zhibiaochen/Desktop/develop/web3/OpenWeb3-Github/OpenWeb3-IOS"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -386,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740745484162</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="1.0.6">
+      <option name="closed" value="true" />
+      <created>1740746936760</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1740746936760</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

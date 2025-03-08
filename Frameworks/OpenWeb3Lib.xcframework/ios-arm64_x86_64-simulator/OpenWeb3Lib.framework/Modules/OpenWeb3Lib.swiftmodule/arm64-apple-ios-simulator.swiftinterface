@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OpenWeb3Lib
 import AVFoundation
 import Accelerate
@@ -401,7 +401,7 @@ public struct ShareDto {
   open func load() -> Swift.Bool
   open func unLoad()
   open func getName() -> Swift.String
-  open func signIn(verifier: Swift.String, isDev: Swift.Bool = false, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
+  open func signIn(verifier: Swift.String, isDev: Swift.Bool = false, apiHost: Swift.String? = nil, idTokenProvider: @escaping () async -> Swift.String?, onVerifierSuccess: @escaping () -> Swift.Void, onVerifierFailure: @escaping (Swift.Int, Swift.String?) -> Swift.Void)
   open func signOut()
   open func isVerified() -> Swift.Bool
   open func getBotService() -> (any OpenWeb3Lib.BotService)?
