@@ -65,6 +65,7 @@ class MiniSDKManager: NSObject, IAppDelegate {
         self.openPlatformPlugin.signIn(
             verifier: "123",
             isDev: false,
+            //apiHost: "your api server host, eg: https://apiserver.mimo.immo",
             idTokenProvider: tokenProvider,
             onVerifierSuccess: { [weak self] in
                 // Do something
@@ -88,6 +89,7 @@ class MiniSDKManager: NSObject, IAppDelegate {
                 .languageCode("en")
                 .userInterfaceStyle(.light)
                 .maxCachePage(5)
+                //.bridgeProviderFactory(MyBridgeProviderFactory())
                 .resourceProvider(nil)
                 .floatWindowSize(width: 90.0, height: 159.0)
                 .build()

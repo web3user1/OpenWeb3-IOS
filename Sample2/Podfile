@@ -9,6 +9,6 @@ target 'Sample2' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'OpenWeb3Lib' '1.0.6'
+   pod 'OpenWeb3Lib', git: 'git@github.com:web3user1/OpenWeb3-IOS.git', tag: '1.0.7'
 
 end
