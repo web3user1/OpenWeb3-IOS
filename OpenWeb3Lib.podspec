@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'OpenWeb3Lib'
-  s.version      = '1.0.7'
+  s.version      = '1.0.7-fixed'
   s.summary      = 'OpenWebLib is a powerful library for interacting with Web3 technologies.'
   s.description  = 'OpenWebLib is a comprehensive library that enables seamless interaction with Web3 technologies,
                                     offering features like smart contract integration, blockchain data querying, and more.'
